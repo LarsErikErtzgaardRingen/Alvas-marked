@@ -20,6 +20,13 @@ const products = [
   //Skriver ut navnet på alle produkter.
 
   // 3: Filter helter ut elektronikkprodukter, og bruker map for å få et array med navnene på disse produktene.
-
   const electronicsProductNames = products.filter((product) => product.category === "electronics").map((product) => product.name);
+
+  // 4: Some gir true om et produkt koster mer enn 1000 kroner, ellers false.
+  const hasProductsOver1000 = products.some((product) => product.price > 1000);
+
+
+
+
+  
 
