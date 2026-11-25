@@ -19,5 +19,7 @@ const products = [
   const prouctNames = products.map((product) => product.name);
   //Skriver ut navnet på alle produkter.
 
-  //
+  // 3: Filter helter ut elektronikkprodukter, og bruker map for å få et array med navnene på disse produktene.
+
+  const electronicsProductNames = products.filter((product) => product.category === "electronics").map((product) => product.name);
 
