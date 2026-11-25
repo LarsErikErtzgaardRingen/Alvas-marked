@@ -25,6 +25,9 @@ const products = [
   // 4: Some gir true om et produkt koster mer enn 1000 kroner, ellers false.
   const hasProductsOver1000 = products.some((product) => product.price > 1000);
 
+  // 5: Reduce legger sammen prisen på alle produktene, med null som startverdi.
+  const totalPrice = products.reduce((sum, product) => sum + product.price, 0);
+
 
 
 
