@@ -18,7 +18,8 @@ const products = [
   // 2: Her lager vi en ny array med kun navnet itl hvert enkelt produkt.
   const prouctNames = products.map((product) => product.name);
   //Skriver ut navnet på alle produkter.
-
+  console.log(prouctNames);
+   
   // 3: Filter helter ut elektronikkprodukter, og bruker map for å få et array med navnene på disse produktene.
   const electronicsProductNames = products.filter((product) => product.category === "electronics").map((product) => product.name);
 
